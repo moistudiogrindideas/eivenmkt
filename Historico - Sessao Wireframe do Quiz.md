@@ -31,3 +31,11 @@ A Tela 08 (Resultado) inclui banner de perfil, seção "Sua base recomendada" co
 ## 5. Atualização da documentação
 
 `Eiven - Resumo do Projeto.md` atualizado com uma seção nova "Wireframes — Quiz de Perfil" documentando as 9 telas, os node IDs, as decisões dos 4 agentes e o bug corrigido. Este arquivo de histórico criado para registrar o passo a passo da sessão, seguindo o padrão do histórico anterior.
+
+## 6. Segunda versão da Tela 08 (carrinho pré-preenchido)
+
+Pedido de continuação na mesma sessão: montar uma v2 da Tela 08 (Resultado), sem apagar a v1, em que os produtos essenciais já entram no carrinho automaticamente — como fazia a referência original ("Salt & Stone") — e decidir o que ocupa o espaço que antes tinha os botões de compra.
+
+**Ideia proposta:** já que a decisão de compra é tomada pelo sistema nessa variação, a área principal deixa de vender e passa a justificar — seção renomeada para "Por que essa é a sua base", com cada card de produto explicando o motivo da curadoria daquele item pro perfil do usuário + uma tag de "como usar" (pós-treino / diariamente / pela manhã). Isso transforma o espaço da lista de venda numa vitrine de confiança/curadoria, alinhada ao pilar de posicionamento "confiança > preço" do projeto, em vez de ficar redundante com o carrinho que já foi preenchido.
+
+Construído em node `4910:73` ("T02 · Quiz — 08 Resultado (v2 — carrinho pré-preenchido)"), ao lado da v1, mesma linha do Figma. Sidebar do carrinho populada com os 3 itens, subtotal real (R$ 369,70) e CTA "Finalizar pedido" ativo (não mais cinza/desabilitado como na v1). Controle do usuário mantido via link "Remover da base" em cada card e "✕" na sidebar. Frame inclui notas visuais de contexto (faixa amarela + caixa de rodapé) explicando a lógica da variação para discussão — não fazem parte da UI final, remover quando a direção for validada.
